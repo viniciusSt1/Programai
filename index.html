@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" />
+    <link rel="stylesheet" href="main.css">
+    <title>Programai</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#instructions" class="smoth-scroll">Instruções</a></li>
+                <li><a href="#author" class="smoth-scroll">Autor</a></li>
+                <li><a href="#list-one" class="smoth-scroll">Lista 1</a></li>
+                <li><a href="#list-two" class="smoth-scroll">Lista 2</a></li>
+                <li><a href="#list-three" class="smoth-scroll">Lista 3</a></li>
+                <li><a href="#list-four" class="smoth-scroll">Lista 4</a></li>
+                <li><a href="#list-five" class="smoth-scroll">Lista 5</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <section id="home">
+            <img src="imgs/prog.jpg" alt="Pessoa programando">
+            <article id="instructions">
+                <h1>Instruções</h1>
+                <p>O objetivo deste site é fornecer uma variedade de listas de exercícios correspondentes à disciplina de Laboratório de Programação I do curso de Engenharia da Computação da UFGD. Composto por cinco listas de exercícios, cada uma delas aborda tópicos específicos da ementa da disciplina. As listas contêm tanto exercícios teóricos (discursivos) quanto exercícios práticos (implementação de programas).</p>
+                <p>Aqui estão os tópicos abordados por cada lista de exercícios:</p>
+                <ol>
+                    <li>Variável e seus tipos</li>
+                    <li>Operadores aritméticos</li>
+                    <li>Operadores relacionais</li>
+                    <li>Operadores lógicos</li>
+                    <li>Expressões lógicas</li>
+                    <li>Estruturas condicionais</li>
+                    <li>Laços de repetição</li>
+                    <li>Arrays</li>
+                    <li>Subrotina</li>
+                    <li>Ponteiros em C</li>
+                </ol>
+                <p>A Lista 1 aborda os conteúdos dos tópicos 1, 2, 3 e 4, enquanto a Lista 2 aborda os conteúdos dos tópicos 5 e 6. Já as Listas 3, 4, 5 e 6 correspondem aos tópicos 7, 8, 9 e 10, respectivamente.</p>
+                <p>Cada lista de exercícios pressupõe conhecimentos adquiridos nas listas anteriores, portanto, é altamente recomendado seguir a sequência das listas caso você esteja aprendendo ou se familiarizando com os tópicos. Isso permitirá que você construa uma base sólida e desenvolva uma compreensão gradual dos conceitos abordados.</p>
+                <p>É importante mencionar que todas as listas de exercícios contêm tanto exercícios teóricos quanto práticos, e exigem conhecimentos fundamentais para todo programador.</p>
+                <h2>Recomendações</h2>
+                <ul>
+                    <li>Recomenda-se utilizar as dicas fornecidas apenas quando necessário.</li>
+                    <li>A funcionalidade de ver a resposta é recomendada após tentar resolver o exercício ou para correção de uma resolução já feita.</li>
+                    <li>Embora os exercícios tenham sido desenvolvidos com foco na linguagem C, é possível resolvê-los em qualquer outra linguagem de programação, o que pode ser benéfico para o seu aprendizado futuro.</li>
+                </ul>
+                <p>É importante ressaltar que não existe uma única resposta correta para os exercícios. As respostas fornecidas no site são apenas uma alternativa de boa resposta.</p>
+            </article>
+        </section>
+
+        <section id="list-one">
+            <h1>Lista 1 - tópicos 1,2,3 e 4</h1>
+            <ol>
+                <li>
+                    <p>No contexto da programação, explique de forma simples e com suas próprias palavras o conceito de variáveis e o que podemos fazer com elas.</p>
+                    <button onclick="showhidden('q1d')"><i class="fas fa-lightbulb"></i> Dica</button>
+                    <button onclick="showhidden('q1r')">Resposta</button>
+                    <div id="q1d" class="dica hidden">
+                        <p>As variáveis desempenham um papel fundamental na programação e são uma das primeiras coisas que aprendemos estudar programação. Explique o que ocorre quando criamos uma variável e discorra sobre as várias operações que podemos realizar com ela.</p>
+                    </div>
+                    <div id="q1r" class="resposta hidden">
+                        <p>As variáveis desempenham um papel fundamental na programação. Quando criamos uma variável, reservamos um espaço na memória do computador para armazenar um valor específico, que pode ser um número, uma palavra, um caractere ou outro tipo de dado. Essa capacidade de armazenamento nos permite realizar diversas operações entre variáveis, como realizar cálculos matemáticos, concatenar strings, comparar valores e muito mais. Além disso, as variáveis podem ser atualizadas e modificadas ao longo do programa, tornando nossos programas mais flexíveis e interativos.</p>
+                    </div>
+                </li>
+                <li>
+                    <p>Liste os principais tipos de variáveis da linguagem C, juntamente com a quantidade de bytes que a máquina utiliza para armazená-las quando declaradas.</p>
+                    <button onclick="showhidden('q2d')"><i class="fas fa-lightbulb"></i> Dica</button>
+                    <button onclick="showhidden('q2r')">Resposta</button>
+                    <div id="q2d" class="dica hidden">
+                        <p>Em linguagem C, existem quatro principais tipos de variáveis relacionados aos diferentes tipos de dados que podem ser armazenados. Cada tipo de variável possui um tamanho específico em bytes na memória do computador.</p>
+                    </div>
+                    <div id="q2r" class="resposta hidden">
+                        <p>Tipo "int" (inteiro): Utiliza 4 bytes de memória.</p>
+                        <p>Tipo "float" (ponto flutuante de precisão simples): Utiliza 4 bytes de memória.</p>
+                        <p>Tipo "double" (ponto flutuante de precisão dupla): Utiliza 8 bytes de memória.</p>
+                        <p>Tipo "char" (caractere): Utiliza 1 byte de memória.</p>
+                    </div>
+                </li>
+                <li>
+                    <p>Em C, declare os principais tipos de variáveis e atribua um valor a cada uma delas. Em seguida, utilize o printf para exibir na tela o valor de cada variável</p>
+                    <button onclick="showhidden('q3d')"><i class="fas fa-lightbulb"></i> Dica</button>
+                    <button onclick="showhidden('q3r')">Resposta</button>
+                    <div id="q3d" class="dica hidden">
+                        <p>Os principais tipos de variaveis são int, float, double e char</p>
+                        <p>No printf usamos:</p>
+                        <p>%d ou %i para mostrar numeros inteiros</p>
+                        <p>%f para tipo float</p>
+                        <p>%c para tipo char</p>
+                        <p>%if para tipo double</p>
+                    </div>
+                    <div id="q3r" class="resposta hidden">
+<pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int numInteiro = 10;
+    float numFloat = 3.14;
+    double numDouble = 2.71828;
+    char caractere = 'A';
+                    
+    printf("Valor do inteiro: %d\n", numInteiro);
+    printf("Valor do ponto flutuante: %f\n", numFloat);
+    printf("Valor do ponto flutuante de precisão dupla: %lf\n", numDouble);
+    printf("Valor do caractere: %c\n", caractere);
+                    
+    return 0;
+} 
+</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <p>Faça um programa em C que solicite ao usuário dois valores numéricos e armazene cada valor em uma variável diferente. Em seguida, troque os valores das variáveis, ou seja, atribua o valor da primeira variável à segunda e o valor da segunda variável à primeira. Por fim, utilize um único printf para exibir na tela as duas variáveis com seus valores trocados.</p>
+                    <button onclick="showhidden('q4d')"><i class="fas fa-lightbulb"></i> Dica</button>
+                    <button onclick="showhidden('q4r')">Resposta</button>
+                    <div id="q4d" class="dica hidden">
+                        <p>Para realizar a troca de valores entre as variáveis utilize uma variável auxiliar. A variável auxiliar receberá o valor de uma das variáveis temporariamente, permitindo que não se perca o valor durante a troca.</p>
+                        <p>Use a função scanf(&variavel) para salvar os valores digitados pelo usuário</p>
+                    </div>
+                    <div id="q4r" class="resposta hidden">
+<pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    float valor1, valor2, temp;
+        
+    printf("Digite o primeiro valor: ");
+    scanf("%f", &valor1);
+        
+    printf("Digite o segundo valor: ");
+    scanf("%f", &valor2);
+        
+    // Troca dos valores
+    temp = valor1;
+    valor1 = valor2;
+    valor2 = temp;
+        
+    printf("Valores trocados:\n");
+    printf("Primeiro valor: %.2f\n Segundo valor: %.2f", valor1, valor2);
+        
+    return 0;
+}
+</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <p>Escreva quais são os operadores aritméticos em C e sua respeciva sintaxe.</p>
+                    <button onclick="showhidden('q5d')"><i class="fas fa-lightbulb"></i> Dica</button>
+                    <button onclick="showhidden('q5r')">Resposta</button>
+                    <div id="q5d" class="dica hidden">
+                        <p> Em C, existem cinco operadores aritméticos principais, que correspondem aos operadores utilizados na matemática. Eles podem ser aplicados em expressões aritméticas para realizar cálculos matemáticos. Eles podem ser aplicados em expressões aritméticas para realizar cálculos matemáticos.</p>
+                    </div>
+                    <div id="q5r" class="resposta hidden">
+                        <p>Soma (+): Realiza a adição de dois valores.</p>
+                        <p>Sintaxe: resultado = operando1 <b>+</b> operando2;</p>
+                        <p>Subtração (-): Realiza a subtração de dois valores.</p>
+                        <p>Sintaxe: resultado = operando1 <b>-</b> operando2;</p>
+                        <p>Multiplicação (*): Realiza a multiplicação de dois valores.</p>
+                        <p>Sintaxe: resultado = operando1 <b>*</b> operando2;</p>
+                        <p>Divisão (/): Realiza a divisão de dois valores.</p>
+                        <p>Sintaxe: resultado = operando1 <b>/</b> operando2;</p>
+                        <p>Resto da divisão (%): Retorna o resto da divisão entre dois valores.</p>
+                        <p>Sintaxe: resultado = operando1 <b>%</b> operando2;</p>
+                    </div>
+                </li>
+                <li>
+                    <p>Faça um programa em C que solicite ao usuário que informe dois valores numéricos. Em seguida, realize todas as operações aritméticas básicas entre esses valores e exiba o resultado de cada operação na tela.</p>
+                    <button onclick="showhidden('q6d')"><i class="fas fa-lightbulb"></i> Dica</button>
+                    <button onclick="showhidden('q6r')">Resposta</button>
+                    <div id="q6d" class="dica hidden">
+                        <p>Para realizar as operações aritméticas (soma, subtração, multiplicação, divisão e módulo) entre os valores informados pelo usuário, utilize as variáveis adequadas e os operadores aritméticos correspondentes. Utilize a sintaxe correta para cada operação. Utilize o scanf para receber os valores do usuário. Certifique-se de armazenar cada valor em variáveis apropriadas, correspondentes ao tipo de dado que está sendo lido. Em seguida, utilize o printf para exibir cada resultado na saída do programa.</p>
+                    </div>
+                    <div id="q6r" class="resposta hidden">
+<pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    float valor1, valor2;
+        
+    // Solicita ao usuário que informe dois valores
+    printf("Digite o primeiro valor: ");
+    scanf("%f", &valor1);
+        
+    printf("Digite o segundo valor: ");
+    scanf("%f", &valor2);
+        
+    // Realiza as operações aritméticas e exibe os resultados
+    float soma = valor1 + valor2;
+    float subtracao = valor1 - valor2;
+    float multiplicacao = valor1 * valor2;
+    float divisao = valor1 / valor2;
+        
+    printf("Soma: %.2f\n", soma);
+    printf("Subtração: %.2f\n", subtracao);
+    printf("Multiplicação: %.2f\n", multiplicacao);
+    printf("Divisão: %.2f\n", divisao);
+        
+    return 0;
+}
+</code></pre>
+
+                    </div>
+                </li>
+                <li>
+                    <p>Considere a equação matemática f(x) = <span style="white-space: nowrap">7.2x<sup>3-x</sup> + x/2 - 1</span>. Escreva um programa em C que solicite ao usuário que informe o valor de x e, em seguida, calcule e exiba o resultado da função f(x) utilizando a fórmula fornecida.</p>
+                    <button onclick="showhidden('q7d')"><i class="fas fa-lightbulb"></i> Dica</button>
+                    <button onclick="showhidden('q7r')">Resposta</button>
+                    <div id="q7d" class="dica hidden">
+                        <p>Ao calcular o valor da função f(x), é fundamental respeitar a ordem de precedência dos operadores matemáticos. Lembre-se de que as operações de exponenciação têm a maior prioridade, seguidas pelas operações de divisão e multiplicação, e por fim, as operações de adição e subtração. Utilize parênteses para agrupar as operações que devem ser realizadas primeiro, garantindo assim a correta avaliação das expressões.</p>
+                        <p>Utilize a bibliotecca math.h para fazer a exponenciação.</p>
+                    </div>
+                    <div id="q7r" class="resposta hidden">
+<pre><code>
+#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+        
+int main() {
+    float x;
+    float resultado;
+        
+    // Solicita ao usuário que informe o valor de x
+    printf("Digite o valor de x: ");
+    scanf("%f", &x);
+        
+    // Calcula o resultado da função f(x)
+    resultado = pow(7.2, (3 - x)) + (x / 2) - 1;
+        
+    // Exibe o resultado da função f(x)
+    printf("O resultado da função f(x) é: %.2f\n", resultado);
+        
+    return 0;
+}   
+</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <p>Considere que uma caixa de bombom pode armazenar até 8 bombons. Escreva um programa em C que solicite ao usuário que informe a quantidade de bombons desejada. Em seguida, calcule e exiba a quantidade mínima de caixas necessárias para armazenar todos os bombons, levando em conta que cada caixa pode conter no máximo 8 bombons. Tente resolver o problema sem utilizar o comando 'if'.</p>
+                    <button onclick="showhidden('q8d')"><i class="fas fa-lightbulb"></i> Dica</button>
+                    <button onclick="showhidden('q8r')">Resposta</button>
+                    <div id="q8d" class="dica hidden">
+                        <p>Utilize o conceito de arredondamento para cima (teto da divisão) para encontrar o número mínimo de caixas necessárias sem usar o comando 'if'. Divida a quantidade total de bombons pelo tamanho máximo de cada caixa (8) e armazene o resultado em uma variável inteira. Ao fazer isso, você obtém apenas a parte inteira do resultado, garantindo que qualquer quantidade parcial de bombons exija pelo menos uma caixa completa. Use a lógica para conseguir encontrar sempre o teto da divisão.</p>
+                    </div>
+                    <div id="q8r" class="resposta hidden">
+<pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int quantidadeBombons;
+    int quantidadeCaixas;
+        
+    // Solicita ao usuário que informe a quantidade de bombons desejada
+    printf("Digite a quantidade de bombons desejada: ");
+    scanf("%d", &quantidadeBombons);
+        
+    // Calcula a quantidade mínima de caixas necessárias
+    quantidadeCaixas = (quantidadeBombons + 7) / 8;
+        
+    // Exibe a quantidade mínima de caixas necessárias
+    printf("A quantidade mínima de caixas necessárias é: %d\n", quantidadeCaixas);
+        
+    return 0;
+}        
+</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <p>Escreva quais são os operadores relacionais em C e sua respectiva sintaxe.</p>
+                    <button onclick="showhidden('q9d')"><i class="fas fa-lightbulb"></i> Dica</button>
+                    <button onclick="showhidden('q9r')">Resposta</button>
+                    <div id="q9d" class="dica hidden">
+                        <p>Os operadores relacionais em C são utilizados para realizar comparações entre valores. Ao total temos 6 operadores relacionais</p>
+                    </div>
+                    <div id="q9r" class="resposta hidden">
+                        <p>Igual a: ==</p>
+                        <p>Sintaxe: valor1 <b>==</b> valor2</p>
+                        <p>Diferente de: !=</p>
+                        <p>Sintaxe: valor1 <b>!=</b> valor2</p>
+                        <p>Maior que: ></p>
+                        <p>Sintaxe: valor1 <b>></b> valor2</p>
+                        <p>Maior ou igual a: >=</p>
+                        <p>Sintaxe: valor1 <b>>=</b> valor2</p>
+                        <p>Menor que: <</p>
+                        <p>Sintaxe: valor1 <b><</b> valor2</p>
+                        <p>Menor ou igual a: <=</p>
+                        <p>Sintaxe: valor1 <b><=</b> valor2</p>
+                    </div>
+                </li>
+                <li>
+                    <p>Dado o trecho de código <b>x = 1 'operador relacional' 0</b>, qual será o valor de x para cada um dos operadores relacionais em C?</p>
+                    <button onclick="showhidden('q10d')"><i class="fas fa-lightbulb"></i> Dica</button>
+                    <button onclick="showhidden('q10r')">Resposta</button>
+                    <div id="q10d" class="dica hidden">
+                        <p>Em outras linguagens de programação temos as variaveis do tipo lógico (false ou true). Em C essas variáveis são 0 e 1 respectivamente, ou seja, o valor de x será sempre 0 ou 1</p>
+                    </div>
+                    <div id="q10r" class="resposta hidden">
+                        <p>Igual a (==): Se o operador for ==, o resultado da expressão <b>x = 1 == 0</b> será 0. Isso ocorre porque a igualdade 1 == 0 é falsa, e o valor atribuído a x será 0.</p>
+                        <p>Diferente de (!=): Se o operador for !=, o resultado da expressão <b>x = 1 != 0</b> será 1. Isso ocorre porque a desigualdade 1 != 0 é verdadeira, e o valor atribuído a x será 1.</p>
+                        <p>Maior que (>): Se o operador for >, o resultado da expressão <b>x = 1 > 0</b> será 1. Isso ocorre porque a comparação 1 > 0 é verdadeira, e o valor atribuído a x será 1.</p>
+                        <p>Maior ou igual a (>=): Se o operador for >=, o resultado da expressão <b>x = 1 >= 0</b> será 1. Isso ocorre porque a comparação 1 >= 0 é verdadeira, e o valor atribuído a x será 1.</p>
+                        <p>Menor que (<): Se o operador for <, o resultado da expressão <b>x = 1 < 0</b> será 0. Isso ocorre porque a comparação 1 < 0 é falsa, e o valor atribuído a x será 0.</p>
+                        <p>Menor ou igual a (<=): Se o operador for <=, o resultado da expressão <b>x = 1 <= 0</b> será 0. Isso ocorre porque a comparação 1 <= 0 é falsa, e o valor atribuído a x será 0.</p>
+                    </div>
+                </li>
+                <li>
+                    <p>Escreva quais são os operadores lógicos em C e sua respeciva sintaxe.</p>
+                    <button onclick="showhidden('q11d')"><i class="fas fa-lightbulb"></i> Dica</button>
+                    <button onclick="showhidden('q11r')">Resposta</button>
+                    <div id="q11d" class="dica hidden">
+                        <p>Operadores lógicos são utilizados em programação para realizar operações de lógica booleana, ou seja, operações que envolvem valores lógicos verdadeiro (representado como 1) e falso (representado como 0). Esses operadores são utilizados para combinar ou inverter condições lógicas, permitindo a avaliação de múltiplas condições em uma expressão. Ao total temos 3 operadores lógicos em C</p>
+                    </div>
+                    <div id="q11r" class="resposta hidden">
+                        <p>E ou AND lógico</p>
+                        <p>Sintaxe: expressão1 <b>&&</b> expressão2</p>
+                        <p>OU ou OR lógico</p>
+                        <p>Sintaxe: expressão1 <b>||</b> expressão2</p>
+                        <p>Não ou NOT lógico</p>
+                        <p>Sintaxe: <b>!</b>expressão</p>
+                    </div>
+                </li>
+                <li>
+                    <p>Explique a diferença entre operadores aritméticos, operadores lógicos e operadores relacionais, e quando devemos utilizá-los.</p>
+                    <button onclick="showhidden('q12d')"><i class="fas fa-lightbulb"></i> Dica</button>
+                    <button onclick="showhidden('q12r')">Resposta</button>
+                    <div id="q12d" class="dica hidden">
+                        <p>Para entender a diferença entre operadores aritméticos, operadores lógicos e operadores relacionais, leve em consideração o tipo de dados que estamos manipulando em cada caso.</p>
+                    </div>
+                    <div id="q12r" class="resposta hidden">
+                        <p>Os operadores aritméticos são utilizados para realizar operações matemáticas, como adição (+), subtração (-), multiplicação (*) e divisão (/). Eles são aplicados a valores numéricos e retornam um resultado calculado com base nos operandos.</p>
+                        <p>Os operadores relacionais são utilizados para comparar valores e verificar relações entre eles. Eles incluem operadores como maior que (>), menor que (<), maior ou igual a (>=), menor ou igual a (<=), igual a (==) e diferente de (!=). Esses operadores retornam um valor booleano (verdadeiro ou falso) com base na comparação realizada.</p>
+                        <p>Os operadores lógicos em linguagens de programação, como C, são usados para comparar valores booleanos (que podem ser gerado através dos operadores relacionais) e avaliar condições compostas. Eles conseguem associar expressões relacionais e lógicas gerando assim novos valores lógicos. Os operadores lógicos mais comuns são o "E" lógico (&&), o "OU" lógico (||) e o "NÃO" lógico (!).</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        <section id="list-two">
+
+        </section>
+        <section id="list-three">
+
+        </section>
+        <section id="list-four">
+
+        </section>
+        <section id="list-five">
+
+        </section>
+        <section id="author">
+            <h1>Autor</h1>
+            <div id="perfil">
+                <img src="imgs/eu.jpeg" alt="Foto do autor">
+                <div id="infos">
+                    <p><b>Vinicius Stefanes Mendes</b></p>
+                    <p>Cursando Engenharia da Computação - UFGD</p>
+                </div>
+            </div>
+            <p>Olá, meu nome é Vinicius Stefanes e fiz esse site primeiramente para ajudar meu irmão Lucas Stefanes a ser um bom programador, contudo disponibilizo esse trabalho para todos que queiram usufruir.</p>
+            <p>Esse trabalho foi feio em virtude primeiramente ao IFMS por ter me proporcionado conhecimentos de desenvolvimento web, segundamente a todos os professores envolvidos que me ensinaram a programar e por fim ao meu querido CHAT GPT que me ajudou em algumas partes desse site.</p>
+            <p>Obs: As listas 2,3 4 e 5 estão em fases de desenvolvimento :P</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Copyright © 2023 Vinicius Stefanes - Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
