@@ -1,0 +1,46 @@
+#home{
+    display: flex;
+    background-color: #111625;
+    padding:12vh 30px 30px 30px;
+}
+#home img{
+    width: 45%;
+    object-fit: cover;
+    /*border-radius: 5%;*/
+}
+#instructions{
+    font-size:18px;
+    padding:10px 0 0 30px;
+    color:rgb(250,250,250);
+    font-weight: 200;
+    /*backdrop-filter: blur(8px);*/
+}
+#instructions p{
+    margin: 8px 0;
+    text-align: justify;
+}
+#instructions ol{
+    column-count: 2;
+}
+#instructions h1{
+    font-size: 25px;
+    font-weight: 800;
+}
+#instructions h2{
+    font-size: 23px;
+    font-weight: 700;
+}
+@media (max-width:800px) {
+    #home img{
+        display:none;
+    }
+    #instructions,#home{
+        padding:5px;
+    }
+    #home{
+        padding-top:12vh;
+    }
+    #instructions ol{
+        column-count: 1;
+    }
+}

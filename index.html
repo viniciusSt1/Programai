@@ -4,26 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" />
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/author.css">
     <title>Programai</title>
 </head>
 <body>
-    <header>
+    <header id="header">
+        <div id="logo">
+            <img src="imgs/logo.png" alt="">
+        </div>
         <nav>
             <ul>
+                <li class="dropdown">
+                    <a>Listas<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="#list-one" class="smoth-scroll">Lista 1</a></li>
+                            <li><a href="#list-two" class="smoth-scroll">Lista 2</a></li>
+                            <li><a href="#list-three" class="smoth-scroll">Lista 3</a></li>
+                            <li><a href="#list-four" class="smoth-scroll">Lista 4</a></li>
+                            <li><a href="#list-five" class="smoth-scroll">Lista 5</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="#instructions" class="smoth-scroll">Instruções</a></li>
                 <li><a href="#author" class="smoth-scroll">Autor</a></li>
-                <li><a href="#list-one" class="smoth-scroll">Lista 1</a></li>
-                <li><a href="#list-two" class="smoth-scroll">Lista 2</a></li>
-                <li><a href="#list-three" class="smoth-scroll">Lista 3</a></li>
-                <li><a href="#list-four" class="smoth-scroll">Lista 4</a></li>
-                <li><a href="#list-five" class="smoth-scroll">Lista 5</a></li>
             </ul>
         </nav>
-        
     </header>
     <main>
         <section id="home">
@@ -361,14 +373,23 @@ int main() {
                     <p>Cursando Engenharia da Computação - UFGD</p>
                 </div>
             </div>
-            <p>Olá, meu nome é Vinicius Stefanes e fiz esse site primeiramente para ajudar meu irmão Lucas Stefanes a ser um bom programador, contudo disponibilizo esse trabalho para todos que queiram usufruir.</p>
-            <p>Esse trabalho foi feio em virtude primeiramente ao IFMS por ter me proporcionado conhecimentos de desenvolvimento web, segundamente a todos os professores envolvidos que me ensinaram a programar e por fim ao meu querido CHAT GPT que me ajudou em algumas partes desse site.</p>
+            <p>Olá, meu nome é Vinicius Stefanes e criei este site com o objetivo de auxiliar meu irmão, Lucas Stefanes, em sua jornada como programador. No entanto, decidi disponibilizar esse trabalho para todos que desejem se beneficiar dele.</p>
+            <p>Este trabalho foi desenvolvido com base nos conhecimentos de desenvolvimento web adquiridos por meio do IFMS (Instituto Federal de Mato Grosso do Sul), bem como dos ensinamentos dos professores da minha faculdade, que me guiaram durante o aprendizado da programação em C. Além disso, gostaria de mencionar a contribuição valiosa do curso do freecodecamp, que me auxiliou na obtenção de conhecimentos em design e responsividade.</p>
+            <p>Segue ai nas redes sociais sla...</p>
+            <div id="redes">
+                <a href="https://www.instagram.com/viniciusstefanes/" target="_blank"><img src="imgs/instagram.png" alt=""></a>
+                <a href="https://www.facebook.com/vinicius.stefanes" target="_blank"><img src="imgs/facebook.png" alt=""></a>
+                <a href="https://github.com/viniciusSt1" target="_blank"><img src="imgs/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/vin%C3%ADcius-stefanes-73a502189/" target="_blank"><img src="imgs/linkedin.png" alt=""></a>
+                
+            </div>
             <p>Obs: As listas 2,3 4 e 5 estão em fases de desenvolvimento :P</p>
         </section>
     </main>
     
     <footer>
         <p>Copyright © 2023 Vinicius Stefanes - Todos os direitos reservados.</p>
+        <div> Ícones feitos por <a href="https://www.flaticon.com/br/autores/najmunnahar" title="NajmunNahar" target="_blank"> NajmunNahar </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>
     </footer>
     <script src="script.js"></script>
 </body>

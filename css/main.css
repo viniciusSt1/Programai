@@ -1,0 +1,99 @@
+*{
+    margin:0;
+}
+.paleta{
+    color:rgb(250,250,250);
+    color:#111625;
+    color:#341931;
+    color:#571b3c;
+    color:#7a1e48;
+    color:#9d2053;
+
+    color:#1E1533;
+    color:#1A193D;
+    color:#192C3D;
+    color:#152C33;
+}
+body{
+    background-color:rgb(250,250,250);
+    font-family: 'Roboto';
+    color:#111625;
+}
+
+/*Listas*/
+main pre{
+    margin-top: -1em;
+    padding-left: 2%;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+/*Primeira lista*/
+#list-one{
+    font-size:18px;
+    width: 80%;
+    margin:20px auto;
+}
+#list-one h1{
+    font-size:30px;
+    margin:7px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #341931;
+    display: inline-block;
+}
+#list-one ol>li:not(#list-one ol li:last-child){
+    text-align: justify;
+    margin:10px 0;
+    border-bottom: 1px solid gray;
+}
+#list-one ol li button{
+    color:#7a1e48;
+    background-color: rgb(250,250,250);
+    font-size: 18px;
+    border:1px solid;
+    border-radius: 5px;
+    margin:10px 0px 20px 20px;
+    cursor: pointer;
+}
+.dica,.resposta{
+    font-size: 15px;
+    font-weight: 200;
+    color:#9d2053;
+    background-color: rgb(220 230 230);
+    padding:10px 8px;
+    margin-bottom: 20px;
+}
+.resposta{
+    color:rgb(185, 0, 0);
+}
+.dica p,.resposta p{
+    margin-bottom: 4px;
+}
+
+/*Algumas coisas de funcionalidade*/
+.hidden{
+    display:none;
+}
+.show{
+    display:block;
+}
+
+/*rodape*/
+footer{
+    background-color: #111625;
+    color:rgb(250,250,250);
+    height: 110px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+footer p,footer div{
+    text-align: center;
+    margin: 3px;
+}
+footer div a{
+    text-decoration: none;
+    color:rgb(220 230 230);
+}
